@@ -46,3 +46,11 @@ searchBtn.addEventListener('click', () => {
   searchErrorShow.innerText = '';
   fetchSearchData(searchField.value);
 });
+
+
+
+
+// banner number effect
+const effect = setInterval(()=> {
+  
+}, 100)
