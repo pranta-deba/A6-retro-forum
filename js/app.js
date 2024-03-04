@@ -1,4 +1,4 @@
-// display all data
+//(step: 2) display all data
 const displayAllData = (data) => {
   const allItems = document.getElementById("allItems");
   allItems.innerHTML = '';
@@ -18,7 +18,7 @@ const displayAllData = (data) => {
   spinner("spinner", false);
 };
 
-// display latest post
+//(step: 7) display latest post
 const displayLatestData = (data) => {
   data.forEach((post) => {
     latestDataAppend(
@@ -34,7 +34,7 @@ const displayLatestData = (data) => {
   spinner("spinner2", false);
 };
 
-// search data 
+//(step: 9) search data 
 const searchBtn = document.getElementById('searchBtn');
 const searchErrorShow = document.getElementById('searchErrorShow');
 searchBtn.addEventListener('click', () => {
@@ -46,11 +46,3 @@ searchBtn.addEventListener('click', () => {
   searchErrorShow.innerText = '';
   fetchSearchData(searchField.value);
 });
-
-
-
-
-// banner number effect
-const effect = setInterval(()=> {
-  
-}, 100)

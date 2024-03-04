@@ -9,7 +9,7 @@ const spinner = (id, isSpinner) => {
 };
 
 
-// dynamic post 
+//(step: 3) dynamic post 
 const AllDataAppend = (
   image,
   category,
@@ -67,7 +67,7 @@ const AllDataAppend = (
 };
 
 
-// dynamic read Post
+//(step: 4) dynamic read Post
 let readCounter = 1;
 let validate = [];
 const readMePost = (title, views, ele) => {
@@ -93,7 +93,7 @@ const readMePost = (title, views, ele) => {
 };
 
 
-// dynamic latest post
+//(step: 8) dynamic latest post
 const latestDataAppend = (
   coverPic,
   profilePic,
@@ -126,3 +126,11 @@ const latestDataAppend = (
           </div>`;
   latestItems.appendChild(div);
 };
+
+//(step: 11) search Not Found error show
+const searchNotFound = () => {
+  const allItems = document.getElementById("allItems");
+  allItems.innerHTML = `<div>
+  <img class="rounded-2xl" src="./images/searchNotFound.gif" alt="" srcset="">
+ </div>`;
+}
